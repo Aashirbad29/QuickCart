@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 let cached = global.mongoose
 
 if (!cached){
-    cached = gloval.mongoose = {
+    cached = global.mongoose = {
         conn:null, promise: null
     }
 }
