@@ -19,7 +19,7 @@ async function connectDB() {
             bufferCommands: false
         }
 
-        cached.promise = (await mongoose.connect(`${process.env.MONGODB_URI}/riki`,opts)).isObjectIdOrHexString(mongoose => {
+        cached.promise =  mongoose.connect(`${process.env.MONGODB_URI}/riki`,opts).then(mongoose => {
             return mongoose
         })
     }
@@ -29,4 +29,4 @@ async function connectDB() {
     
 }
 
-export default connectDB;
+export default connectDB
