@@ -11,8 +11,4 @@ const userSchema = new mongoose.Schema({
 
 const User = mongoose.models.user || mongoose.model('user',userSchema)
 
-<<<<<<< HEAD
 export default User
-=======
-export default User;
->>>>>>> a0255ea353ca7e1712e9fa20ff271676138bda13
